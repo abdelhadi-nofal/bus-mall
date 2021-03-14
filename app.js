@@ -75,6 +75,11 @@ function clickHandler(event){
         console.table(prodcts.all[i]);
         console.log(prodcts.all[i].votes);
       }
+      if(prodcts.all[i].path === event.target.src || prodcts.all[i].name === event.target.title ){
+        prodcts.all[i].views++;
+        // console.table(prodcts.all[i]);
+        console.log(prodcts.all[i].views);
+      }
     }
     console.log(cnt);
     render();
@@ -85,7 +90,7 @@ function clickHandler(event){
       document.getElementById('resultBtn').addEventListener('click', function() {
         let ul=document.getElementById('demo');
         let li=document.createElement('li');
-        li.innerText=(prodcts.all[i].name +' had '+prodcts.all[i].votes + ' votes, and was seen');
+        li.innerText=(prodcts.all[i].name +' had '+prodcts.all[i].votes + ' votes, and was seen  '+ prodcts.all[i].views +' times.');
         ul.appendChild(li);
       });
     }}
