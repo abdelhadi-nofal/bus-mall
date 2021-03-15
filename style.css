@@ -1,5 +1,5 @@
 body{
-background-color: blue;
+background-color: rgb(197, 197, 197);
 }
 
 
@@ -32,7 +32,7 @@ section #rightImage{
 
 section{
     margin-left: 180px;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 button{
@@ -43,10 +43,15 @@ button{
     font-size: 20px;
     font-weight: bold;
     border: none;
+    margin-bottom: 0%;
 }
 
 ul{
     margin-left: 300px;
     color: white;
     font-size: 25px;
+}
+
+.sectio{
+    margin-top: 0%;
 }
